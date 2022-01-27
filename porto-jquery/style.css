@@ -1,0 +1,139 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar-nav a {
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.navbar-nav a:hover {
+    color: white;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+hr {
+    height: 2px; 
+    background-color: black;
+}
+
+#main-highlight {
+    height: 300px;
+}
+
+.container-img {
+    position: relative;
+}
+
+#main-title {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+img {
+    height: 105px;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.card {
+    border: none;
+}
+
+#filter .btn {
+    background-color: #edebe6;
+    text-transform: capitalize;
+}
+
+#filter .btn-active, #filter .btn:hover {
+    background-color: rgb(65, 65, 240);
+    color: #edebe6;
+}
+
+.icon-about {
+    font-size: 70px;
+    color: rgb(40, 149, 221);
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control::placeholder {
+    color: #b8b6b6;
+}
+
+.contact-form {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(168, 168, 168);
+}
+
+.contact-form-header {
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(40, 149, 221);
+}
+
+.contact-form-input {
+    padding: 20px;
+}
+
+label span {
+    color: red;
+}
+
+footer {
+    margin-left: -12px;
+    width: 105%;
+}
+
+@media only screen and (max-width: 576px) {
+    #main-title {
+        bottom: 0;
+    }
+    #side-news {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .row > img {
+        height: 100px;
+        width: 50%;
+    }
+
+    div > img {
+        height: 100px;
+        width: 100%;
+    }
+
+    .news-list {
+        width: 100%;
+    }
+
+    .text-center {
+        font-size: 15px;
+    }
+    
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .nav-link:last-child {
+        margin-right: 20px;
+    }
+
+} 

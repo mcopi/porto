@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Apex Legends",
+        "release": 2017,
+        "description": "Apex Legends is the award-winning, free-to-play Hero shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale",
+        "img_src": "apex.jpg"
+    },
+    {
+        "name": "Apex Legends",
+        "release": 2017,
+        "description": "Apex Legends is the award-winning, free-to-play Hero shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale",
+        "img_src": "apex.jpg"
+    },
+    {
+        "name": "Super People",
+        "release": 2021,
+        "description": "WONDER PEOPLE proudly presents a battle royale shooter that will revolutionize how you think about the genre.In SUPER PEOPLE, take control of a super-soldier, each with their own unique skills and survive until you are the last one standing.SIGN UP FOR CBT!",
+        "img_src": "super-people.jpg"
+    },
+    {
+        "name": "Valorant",
+        "release": 2020,
+        "description": "Valorant is a team-based first-person hero shooter set in the near future. Players play as one of a set of Agents, characters designed based on several countries and cultures around the world.",
+        "img_src": "valorant.jpg"
+    },
+    {
+        "name": "Battlefield 2042",
+        "release": 2021,
+        "description": "Battlefield™ 2042 is a first-person shooter that marks the return to the iconic all-out warfare of the franchise. In a near-future world transformed by disorder, adapt and overcome dynamically-changing battlegrounds with the help of your squad and a cutting-edge arsenal.",
+        "img_src": "bf2042.jpg"
+    },
+    {
+        "name": "Day Z",
+        "release": 2018,
+        "description": "How long can you survive a post-apocalyptic world? A land overrun with an infected zombie population, where you compete with other survivors for limited resources. Will you team up with strangers and stay strong together? Or play as a lone wolf to avoid betrayal? This is DayZ – this is your story.",
+        "img_src": "dayZ.jpg"
+    },
+    {
+        "name": "Halo Infinite",
+        "release": 2021,
+        "description": "The legendary Halo series returns with the most expansive Master Chief campaign yet and a ground-breaking free to play multiplayer experience.",
+        "img_src": "halo-infinite.jpg"
+    }
+]
