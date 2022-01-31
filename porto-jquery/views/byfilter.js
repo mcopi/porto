@@ -1,11 +1,11 @@
-import { fetchByFilter, clickedFilter, fetchShuffle } from '../js/function.js';
+import { fetchByFilter, clickedFilter, fetchShuffle, fetchBySearch } from '../js/function.js';
 
 $(document).ready(
     () => {
 
         let byFilter
 
-        $("#filter .btn").click((e) => {
+        $("#filter-button .btn").click(e => {
             
             e.preventDefault()
 
@@ -19,8 +19,8 @@ $(document).ready(
 
             } else {
                 // REMOVE btn-active
-                $("#filter .btn").filter((i, x) => clickedFilter(x.id))
-
+                $("#filter-button .btn").filter((i, x) => clickedFilter(x.id))
+                
                 // ADD NEW btn-active
                 const target = window.event.target
                 
@@ -38,6 +38,23 @@ $(document).ready(
         })
 
         fetchByFilter()
+
+        $("#search-form").submit(e => {
+            e.preventDefault()
+
+            $('.row-byfilter').remove()
+
+            // SEARCH AND REMOVE BTN-ACTIVE
+            $("#filter .btn").filter((i, x) => {
+                if(x.className == 'btn btn-active'){
+                    clickedFilter(x.id)
+                } 
+            })
+
+            // FETCH NEW DATA BY INPUT
+            let searchVal = $("#search-form :input").val()
+            fetchBySearch(searchVal)
+        })
     }
 )
 

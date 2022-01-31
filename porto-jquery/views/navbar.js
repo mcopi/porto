@@ -17,7 +17,6 @@ const removeActiveScroll = (newId) => {
 
 $(document).ready(() => {
     $(window).scroll(() => {
-        console.log($(window).scrollTop())
         // if($(window).scrollTop() < 500){
         //     removeActiveScroll('news')
         // } else if(($(window).scrollTop() >= 500) && ($(window).scrollTop() < 1200)){

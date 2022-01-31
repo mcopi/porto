@@ -86,7 +86,7 @@ const byFilterHtml = (data, id) => {
                         <img src="${data.urlToImage}" alt="">
                     </div>
                     <div class="col-6 col-md-6">
-                        <a>${checkSize(data.title)}</a>
+                        <a href="${data.url}" target="_blank">${checkSize(data.title)}</a>
                     </div>
                 </div>
                 </div>
@@ -155,6 +155,36 @@ const fetchShuffle = () => {
     })
 }
 
+const fetchBySearch = (val) => {
+    $.ajax({
+        url: 'https://newsapi.org/v2/everything',
+        type: 'get',
+        dataType: 'json',
+        data: {
+            'apiKey': '61826c69deba4033b34f8cd95f22c0ee',
+            'q': val,
+            'language': 'id'
+        },
+        beforeSend: () => { $('.spinner-border').show() },
+        success: data => {
+            let newId = 0
+            let dataOutput = shuffle(data.articles)
+
+            $.each(dataOutput.slice(0, 8), (i, x) => {
+                if (i % 2 == 0) {
+                    newId += 1
+                    $(".byfilter-news-wrapper")
+                        .append(`<div class="row row-byfilter" id="byfilter-news-${newId}"></div>`)
+                    byFilterHtml(x, newId)
+                } else {
+                    byFilterHtml(x, newId)
+                }
+            })
+        },
+        complete: () => { $('.spinner-border').hide()}
+    })
+}
+
 const clickedFilter = (data) => {
     $(`#${data}`)
         .removeClass()
@@ -162,4 +192,4 @@ const clickedFilter = (data) => {
         .children('.bi').css('display', 'none')
 }
 
-export { mobileView, slicedTitle, fetchTop, fetchByFilter, clickedFilter, fetchShuffle }
+export { mobileView, slicedTitle, fetchTop, fetchByFilter, clickedFilter, fetchShuffle, fetchBySearch }
